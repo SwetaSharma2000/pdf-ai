@@ -33,7 +33,7 @@
 
 
 
-## 📁 Folder Structure
+##  Folder Structure
 
 PDF-AI/
 ├── backend/
@@ -78,7 +78,7 @@ npm start
 
  Demo
 Watch the application in action here:
-[👉 Click to Watch Demo Video](https://drive.google.com/file/d/1Jbez-BCwz2dUWO4urk94iiS2iTLPwZwK/view?usp=sharing)
+[Click to Watch Demo Video](https://drive.google.com/file/d/1Jbez-BCwz2dUWO4urk94iiS2iTLPwZwK/view?usp=sharing)
 
 
 ## Screenshots
