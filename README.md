@@ -74,14 +74,14 @@ npm start
 | POST   | `/ask/`    | Ask a question and get the answer |
 
 
-## 📽 Demo
+##  Demo
 
-📽 Demo
+ Demo
 Watch the application in action here:
 [👉 Click to Watch Demo Video](https://drive.google.com/file/d/1Jbez-BCwz2dUWO4urk94iiS2iTLPwZwK/view?usp=sharing)
 
 
-## 📸 Screenshots
+## Screenshots
 
 ![Demo Screenshot](./screenshots/Demo.png)
 
