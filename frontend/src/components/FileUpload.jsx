@@ -23,7 +23,7 @@ const FileUpload = ({ onUploadSuccess }) => {
 
       if (onUploadSuccess) {
         onUploadSuccess(fileToUpload.name);
-      // or pass message if you want
+     
       }
     } catch (error) {
       console.error('Upload failed:', error);

@@ -27,7 +27,7 @@ qa_pipeline = pipeline("question-answering", model="deepset/roberta-base-squad2"
 
   
 
-# 🔍 Step 1: Process + Chunk + Embed
+
 def process_pdf(file_bytes):
     global vector_store
 

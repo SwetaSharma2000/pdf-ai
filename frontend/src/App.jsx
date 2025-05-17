@@ -6,7 +6,7 @@ import axios from 'axios';
 
 const App = () => {
  
-  const [qaList, setQaList] = useState([]); // [{ question, answer }]
+  const [qaList, setQaList] = useState([]); 
   const [uploadedFilename, setUploadedFilename] = useState('');
 
 
@@ -34,17 +34,17 @@ const App = () => {
     <>
     
     <div className="fixed top-0 left-0 right-0 flex justify-between items-center px-6 py-3 bg-white shadow-md   flex-col  sm:flex-row sm:justify-between sm:items-center">
-  {/* Left: AI Planet Logo */}
+  
   <img src="/aiplanetlogo.png" alt="AI Planet Logo" className="h-30 w-30" />
 
-  {/* Right: Upload area */}
+  
   <div className="flex items-center space-x-4   flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-2 sm:space-y-0">
-    {/* Uploaded filename */}
+    
     {uploadedFilename && (
       <span className="text-green-600 text-sm font-semibold   truncate max-w-[200px] sm:max-w-full">{uploadedFilename}</span>
     )}
 
-    {/* Upload button */}
+ 
     <FileUpload onUploadSuccess={(filename) => setUploadedFilename(filename)} />
   </div>
 </div>

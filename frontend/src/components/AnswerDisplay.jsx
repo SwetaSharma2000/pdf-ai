@@ -4,7 +4,7 @@ const AnswerDisplay = ({ qaList }) => {
   const bottomRef = useRef(null);
 
   useEffect(() => {
-    // Scroll to the bottom when qaList updates
+  
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [qaList]);
 
@@ -13,7 +13,7 @@ const AnswerDisplay = ({ qaList }) => {
       {qaList.map((qa, idx) => (
         <div key={idx}>
           
-           {/* Question Box */}
+          
           <div className="flex items-start bg-white  p-3 rounded shadow mb-2">
             <img
               src="/user.png"
@@ -26,7 +26,7 @@ const AnswerDisplay = ({ qaList }) => {
           </div>
 
           
-          {/* Answer Box */}
+         
           <div className="flex items-start bg-white  p-3 rounded shadow">
             <img
               src="/logo.jpg"
