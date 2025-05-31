@@ -4,13 +4,14 @@ from langchain_community.document_loaders import PyMuPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
-from transformers import pipeline
+from transformers import pipeline  # type: ignore
+
 import tempfile
 import os
 
 app = FastAPI()
 
-# CORS
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173"],
@@ -19,9 +20,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Globals
+
 vector_store = None
-# qa_pipeline = pipeline("text-generation", model="EleutherAI/gpt-neo-125M", device=-1)
+
 qa_pipeline = pipeline("question-answering", model="deepset/roberta-base-squad2")
 
 
@@ -76,7 +77,7 @@ async def ask_question(request: Request):
     docs = vector_store.similarity_search(question, k=3)
     context = "\n".join([doc.page_content for doc in docs])
 
-    # Use QA pipeline directly
+    
     result = qa_pipeline(question=question, context=context)
     answer = result["answer"]
 
