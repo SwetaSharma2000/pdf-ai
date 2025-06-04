@@ -14,28 +14,28 @@ const AnswerDisplay = ({ qaList }) => {
         <div key={idx}>
           
           
-          <div className="flex items-start bg-white  p-3 rounded shadow mb-2">
+          <div className="flex items-start bg-white  p-3 rounded shadow mb-2"    >
             <img
               src="/user.png"
               alt="User"
               className="w-8 h-8 rounded-full mr-3 flex-shrink-0   sm:w-8 sm:h-8"
             />
             <div>
-              <p className="text-gray-900   text-sm sm:text-base">{qa.question}</p>
+              <p className="text-gray-900   text-sm sm:text-base"   >{qa.question}</p>
             </div>
           </div>
 
           
          
-          <div className="flex items-start bg-white  p-3 rounded shadow">
+          <div className="flex items-start bg-white p-3 rounded shadow"  >
             <img
-              src="/logo.jpg"
+              src="/finalminilogo.png"
               alt="Bot"
-              className="w-8 h-8 rounded-full mr-3 flex-shrink-0   sm:w-8 sm:h-8"
+              className="w-full h-full object-contain rounded-full mr-3 flex-shrink-0   sm:w-8 sm:h-8"
                
             />
             <div>
-              <p className="text-gray-900   text-sm sm:text-base">{qa.answer || 'Loading...'}</p>
+              <p className="text-gray-900   text-sm sm:text-base"  >{qa.answer || 'Loading...'}</p>
             </div>
           </div>
         </div>

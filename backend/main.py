@@ -44,7 +44,7 @@ def process_pdf(file_bytes):
         full_text = "\n".join([doc.page_content for doc in documents])
 
         # Chunking
-        text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50 )
+        text_splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=100 )
         chunks = text_splitter.split_text(full_text)
 
         # Embedding

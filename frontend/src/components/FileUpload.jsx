@@ -36,13 +36,14 @@ const FileUpload = ({ onUploadSuccess }) => {
       
       <label
         htmlFor="file-upload"
-        className="cursor-pointer flex flex-col items-center justify-center w-30 h-20 border-2 border-gray-400 rounded-lg hover:bg-gray-100 transition"
-      >
-        <div className="flex items-center justify-center w-10 h-10 border border-gray-600 rounded-full text-xl font-bold">
-          +
-        </div>
-        <p className="mt-1 text-sm text-gray-700    sm:text-sm">Upload PDF</p>
+        className="cursor-pointer flex flex-row items-center justify-center w-36 h-12 border-2 border-gray-400 rounded-md hover:bg-gray-100 transition space-x-2 px-2"
+>
+         <div className="flex items-center justify-center w-8 h-8 border border-gray-600 rounded-full text-lg font-bold">
+           +
+         </div>
+         <p className="text-sm text-gray-700 sm:text-sm">Upload PDF</p>
       </label>
+
       <input
         id="file-upload"
         type="file"

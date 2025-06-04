@@ -24,9 +24,10 @@ const QuestionForm = ({ onQuestionSubmit }) => {
       />
       <button
         onClick={handleSubmit}
-        className="text-green-600 hover:text-green-800   ml-2"
+        className=" hover:text-green-800 ml-2"
+
         title="Submit"
-      ><span className="text-2xl ml-2">➤</span></button>
+      ><span className="text-2xl ml-2" style={{color:'#A870A8'}}>➤</span></button>
     </div>
 
 
