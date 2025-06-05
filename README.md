@@ -83,7 +83,7 @@ Watch the application in action here:
 
 ## Screenshots
 
-![Demo Screenshot](./screenshots/demo.png)
+![Demo Screenshot](screenshots/demo.png)
 
 
 
