@@ -31,7 +31,7 @@ const AnswerDisplay = ({ qaList }) => {
             <img
               src="/finalminilogo.png"
               alt="Bot"
-              className="w-full h-full object-contain rounded-full mr-3 flex-shrink-0   sm:w-8 sm:h-8"
+              className="w-8 h-8 object-contain rounded-full mr-3 flex-shrink-0   sm:w-8 sm:h-8"
                
             />
             <div>
